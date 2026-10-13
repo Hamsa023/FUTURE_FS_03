@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malnad Cafe - Authentic Shimoga Taste | FUTURE_FS_03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial, Helvetica, sans-serif;background:#FFFBF2;color:#1a1a1a;line-height:1.6}
+nav{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:14px 5%;border-bottom:1px solid #f0d9b5;z-index:99}
+nav .logo{font-size:22px;font-weight:900;color:#111}.logo span{color:#b45309}
+nav .links a{margin-left:20px;text-decoration:none;color:#333;font-weight:700;font-size:14px}
+.hero{display:grid;grid-template-columns:1.2fr 0.8fr;align-items:center;padding:60px 5%;gap:40px;background:linear-gradient(135deg,#fef3c7 0%,#ffedd5 100%)}
+.hero h1{font-size:52px;line-height:1.05;letter-spacing:-1px}.hero h1 span{color:#b45309}
+.hero p{margin:16px 0 28px;color:#57534e;font-size:19px;max-width:520px}
+.btn{padding:14px 28px;border-radius:100px;border:none;font-weight:800;cursor:pointer;font-size:14px;transition:0.2s}
+.btn-p{background:#111;color:#fff}.btn-p:hover{background:#b45309}
+.btn-o{background:transparent;border:2px solid #111;color:#111;margin-left:10px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #f0d9b5;padding:6px 12px;border-radius:100px;font-size:12px;font-weight:700;margin-top:18px}
+.section{padding:70px 5%}.center{text-align:center}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:32px}
+.card{background:#fff;border:1px solid #f5e6cc;border-radius:20px;padding:24px;box-shadow:0 8px 24px #0000000a}
+.card h3{font-size:18px;margin-bottom:6px}.muted{color:#78716c;font-size:14px}
+.price{color:#b45309;font-weight:900;font-size:20px;margin-top:10px}
+.about{max-width:800px;margin:0 auto;text-align:center}
+.about p{color:#57534e;font-size:17px;margin-top:12px}
+.contact-wrap{background:#111;color:#fff;border-radius:24px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+input,textarea{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #ddd;margin-top:8px;background:#fff;color:#111;font-family:Arial}
+label{font-size:12px;color:#a8a29e;margin-top:12px;display:block;font-weight:700}
+footer{text-align:center;padding:28px;color:#a8a29e;border-top:1px solid #eee;font-size:13px}
+@media(max-width:900px){.hero,.grid3,.contact-wrap{grid-template-columns:1fr}.hero h1{font-size:36px}nav .links{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="logo"><span>MALNAD</span> CAFE</div><div class="links"><a href="#menu">MENU</a><a href="#about">ABOUT</a><a href="#contact">BOOK</a></div></nav>
+
+<div class="hero">
+<div>
+<h1>Shimoga's Most Loved <span>Filter Coffee & Benne Dose</span></h1>
+<p>Since 2010 at Gandhi Bazaar. We serve 500+ customers daily. Now online - book direct, no commission.</p>
+<button class="btn btn-p" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">BOOK A TABLE →</button>
+<button class="btn btn-o" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">VIEW MENU</button>
+<div class="badge">📍 Gandhi Bazaar, Shimoga | ⭐ 4.8/5 (1,200+ reviews) | ⏰ 7AM-10PM</div>
+</div>
+<div class="card" style="transform:rotate(1deg)">
+<div style="background:#b45309;color:#fff;display:inline-block;padding:4px 10px;border-radius:100px;font-size:11px;font-weight:800">TODAY'S SPECIAL</div>
+<img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600" style="width:100%;height:220px;object-fit:cover;border-radius:16px;margin:14px 0" alt="Dosa">
+<h3>Benne Masala Dose + Filter Coffee Combo</h3><p class="muted">Crispy dose with benne, potato palya, chutney + strong filter coffee</p><p class="price">₹120 ONLY</p><p style="margin-top:10px;font-size:12px;background:#fef3c7;padding:8px 10px;border-radius:8px">💡 Real Problem Solved: Office staff ku quick breakfast, 10 mins service!</p>
+</div>
+</div>
+
+<div class="section">
+<div class="center"><h2 style="font-size:36px">Why Shimoga Loves Us</h2><p class="muted">Local Business - Local Taste</p></div>
+<div class="grid3">
+<div class="card"><div style="font-size:28px">🍳</div><h3>Breakfast 6AM-11AM</h3><p class="muted">Dose, Idli, Upma with pure ghee. Hygienic & fast.</p></div>
+<div class="card"><div style="font-size:28px">☕</div><h3>Chikmagalur Coffee</h3><p class="muted">Traditional decoction, jaggery option, no instant mix.</p></div>
+<div class="card"><div style="font-size:28px">🍱</div><h3>Catering 50-500 People</h3><p class="muted">Functions, marriages, office parties - Malnad style meals.</p></div>
+</div>
+</div>
+
+<div id="menu" class="section" style="background:#fff7ed">
+<div class="center"><h2 style="font-size:36px">Best Sellers</h2></div>
+<div class="grid3">
+<div class="card"><h3>Benne Masala Dose</h3><p class="muted">Potato palya + white benne + coconut chutney</p><p class="price">₹70</p></div>
+<div class="card"><h3>Malnad Veg Meals</h3><p class="muted">Rice, Sambar, Rasam, 2 Palya, Curd, Pickle, Papad</p><p class="price">₹130</p></div>
+<div class="card"><h3>Filter Coffee (Strong)</h3><p class="muted">Chikmagalur powder, steel glass, extra decoction</p><p class="price">₹30</p></div>
+</div>
+</div>
+
+<div id="about" class="section">
+<div class="about">
+<h2 style="font-size:32px">Business Pitch - Real World Problem</h2>
+<p><b>Problem:</b> Swiggy/Zomato takes 28% commission. Small hotel owner losing ₹15k/month. Customers also pay high delivery fee.</p>
+<p><b>My Solution:</b> This website = Direct booking. Customer calls direct. Owner saves commission. Plus Google la "Malnad Cafe Shimoga" search madidre first barutte - more walk-in customers.</p>
+<p><b>Monetization:</b> 1) Direct orders 2) Catering leads 3) Google Ads later. This site can increase business by 20% in 3 months.</p>
+<p style="margin-top:20px;font-weight:800;color:#b45309">Built by Hamsa S N | Shimoga | For Future Interns FUTURE_FS_03</p>
+</div>
+</div>
+
+<div class="section" id="contact">
+<div class="contact-wrap">
+<div>
+<h2 style="font-size:28px">Visit or Book</h2>
+<p style="color:#d6d3d1;margin:12px 0">Gandhi Bazaar, Near Private Bus Stand,<br>Shimoga, Karnataka - 577201</p>
+<p style="color:#d6d3d1">📞 +91 63609 11034 (Hamsa)<br>📧 malnadcafe.shimoga@gmail.com<br>🕘 Open Daily 7AM - 10PM</p>
+<iframe src="https://maps.google.com/maps?q=Gandhi%20Bazaar%20Shimoga&t=&z=14&ie=UTF8&iwloc=&output=embed" style="width:100%;height:200px;border-radius:16px;border:0;margin-top:20px"></iframe>
+</div>
+<div style="background:#fff;border-radius:16px;padding:22px;color:#111">
+<h3>Book Table / Enquiry</h3>
+<label>Your Name</label><input id="cName" placeholder="Hamsa S N">
+<label>Phone Number</label><input id="cPhone" placeholder="6360911034">
+<label>Message</label><textarea id="cMsg" placeholder="Table for 4 tomorrow 8AM"></textarea>
+<button class="btn btn-p" style="width:100%;margin-top:16px;background:#b45309" onclick="bookNow()">SEND BOOKING</button>
+<p id="msg" style="margin-top:10px;font-size:13px;color:green;font-weight:700"></p>
+</div>
+</div>
+</div>
+
+<footer>© 2026 Malnad Cafe, Shimoga | FUTURE_FS_03 | Built by Hamsa023 | Future Interns Internship Task 3 - Local Business Website</footer>
+
+<script>
+function bookNow(){
+let n=document.getElementById('cName').value.trim();
+let p=document.getElementById('cPhone').value.trim();
+if(!n||!p){alert('Please enter Name & Phone');return}
+document.getElementById('msg').innerText='✅ Thanks '+n+'! We will call you on '+p+' within 10 mins - Malnad Cafe';
+document.getElementById('cName').value='';document.getElementById('cPhone').value='';document.getElementById('cMsg').value='';
+}
+</script>
+</body>
+</html>
